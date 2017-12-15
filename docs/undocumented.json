@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Compatible.swift",
+      "line": 12,
+      "symbol": "Compatible.gs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Compatible.swift",
+      "line": 28,
+      "symbol": "Compatible.CompatibleType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Compatible.swift",
+      "line": 29,
+      "symbol": "Compatible.gs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Compatible.swift",
+      "line": 37,
+      "symbol": "GS.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Notifications.swift",
+      "line": 26,
+      "symbol": "Notification.Name.gs.notificationPrefix",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Then.swift",
+      "line": 16,
+      "symbol": "Then.with(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Then.swift",
+      "line": 22,
+      "symbol": "Then.do(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Then.swift",
+      "line": 29,
+      "symbol": "Then.then(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Wrapper.swift",
+      "line": 16,
+      "symbol": "Wrapper.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Wrapper.swift",
+      "line": 18,
+      "symbol": "Wrapper.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Wrapper.swift",
+      "line": 21,
+      "symbol": "WeakWrapper",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Wrapper.swift",
+      "line": 22,
+      "symbol": "WeakWrapper.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/GloomySunday/Documents/Git/GSStability/GSStability/Wrapper.swift",
+      "line": 24,
+      "symbol": "WeakWrapper.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/GloomySunday/Documents/Git/GSStability"
+}
