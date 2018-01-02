@@ -2,8 +2,8 @@
 //  GSStability.h
 //  GSStability
 //
-//  Created by 孟钰丰 on 2017/12/15.
-//  Copyright © 2017年 孟钰丰. All rights reserved.
+//  Created by 孟钰丰 on 2018/1/2.
+//  Copyright © 2018年 CocoaPods. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

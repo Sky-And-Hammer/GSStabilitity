@@ -1,0 +1,6 @@
+framework module Pods_GSStability_Example {
+  umbrella header "Pods-GSStability_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

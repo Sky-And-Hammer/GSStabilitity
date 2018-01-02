@@ -1,0 +1,16 @@
+PODS:
+  - GSStability (0.1.0)
+
+DEPENDENCIES:
+  - GSStability (from `../`)
+
+EXTERNAL SOURCES:
+  GSStability:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GSStability: ad876067f3c1e64fcf514e0b3c5bc53ce9f99e5c
+
+PODFILE CHECKSUM: 6bb456ad982411eb79b62615e0a9e2ed6bd50850
+
+COCOAPODS: 1.3.1

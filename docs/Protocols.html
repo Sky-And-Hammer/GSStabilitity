@@ -13,7 +13,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (53% documented)</p>
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -87,13 +87,20 @@
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95"></a>
+                <a name="//apple_ref/swift/Section/函数调用方法" class="dashAnchor"></a>
+                <a href="#/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95">
+                  <h3 class="section-name">函数调用方法</h3>
+                </a>
+              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSStability4ThenP"></a>
-                    <a name="//apple_ref/swift/Protocol/Then" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSStability4ThenP">Then</a>
+                    <a name="/s:11GSStability10CompatibleP"></a>
+                    <a name="//apple_ref/swift/Protocol/Compatible" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability10CompatibleP">Compatible</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -101,15 +108,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>很好用的语法糖</p>
+                        <p>extension 实例方法时使用 gs 的命名空间.
+For example:</p>
+<pre class="highlight plaintext"><code>extension String: Compatible {}
 
-                        <a href="Protocols/Then.html" class="slightly-smaller">See more</a>
+extension GS where Base == String {
+
+    /// 长度
+    public var length: Int {
+        return base.characters.count
+    }
+}
+</code></pre>
+
+                        <a href="Protocols/Compatible.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Then</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Compatible</span></code></pre>
 
                         </div>
                       </div>
@@ -196,20 +214,13 @@ For example:</p>
               </ul>
             </div>
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95"></a>
-                <a name="//apple_ref/swift/Section/函数调用方法" class="dashAnchor"></a>
-                <a href="#/%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95">
-                  <h3 class="section-name">函数调用方法</h3>
-                </a>
-              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSStability10CompatibleP"></a>
-                    <a name="//apple_ref/swift/Protocol/Compatible" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSStability10CompatibleP">Compatible</a>
+                    <a name="/s:11GSStability4ThenP"></a>
+                    <a name="//apple_ref/swift/Protocol/Then" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability4ThenP">Then</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -217,26 +228,15 @@ For example:</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>extension 实例方法时使用 gs 的命名空间.
-For example:</p>
-<pre class="highlight plaintext"><code>extension String: Compatible {}
+                        <p>很好用的语法糖</p>
 
-extension GS where Base == String {
-
-    /// 长度
-    public var length: Int {
-        return base.characters.count
-    }
-}
-</code></pre>
-
-                        <a href="Protocols/Compatible.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/Then.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Compatible</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Then</span></code></pre>
 
                         </div>
                       </div>
@@ -248,7 +248,7 @@ extension GS where Base == String {
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-12-16)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

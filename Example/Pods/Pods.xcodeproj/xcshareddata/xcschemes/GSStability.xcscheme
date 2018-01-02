@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC6F55D1FE41A04001697D9"
+               BlueprintIdentifier = "C0FA0A7C083726C6876A7753E4271C05"
                BuildableName = "GSStability.framework"
                BlueprintName = "GSStability"
-               ReferencedContainer = "container:GSStability.xcodeproj">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,26 +29,7 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC6F5661FE41A04001697D9"
-               BuildableName = "GSStabilityTests.xctest"
-               BlueprintName = "GSStabilityTests"
-               ReferencedContainer = "container:GSStability.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC6F55D1FE41A04001697D9"
-            BuildableName = "GSStability.framework"
-            BlueprintName = "GSStability"
-            ReferencedContainer = "container:GSStability.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -66,10 +47,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC6F55D1FE41A04001697D9"
+            BlueprintIdentifier = "C0FA0A7C083726C6876A7753E4271C05"
             BuildableName = "GSStability.framework"
             BlueprintName = "GSStability"
-            ReferencedContainer = "container:GSStability.xcodeproj">
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -81,15 +62,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC6F55D1FE41A04001697D9"
-            BuildableName = "GSStability.framework"
-            BlueprintName = "GSStability"
-            ReferencedContainer = "container:GSStability.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

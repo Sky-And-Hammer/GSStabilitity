@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'GSStability_Example' do
+  pod 'GSStability', :path => '../'
+
+  target 'GSStability_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
