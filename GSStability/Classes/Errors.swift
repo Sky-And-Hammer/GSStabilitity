@@ -8,14 +8,23 @@
 
 import Foundation
 
-/// ErrorReason
+/// A type that describe an error's reason
 public protocol GSErrorReason {
     
-    /// 错误原因
+    /// error reason description. 'type(of: self)' by default
     var reasonDescription: String { get }
+    
+    /// error reason debug description, '' by default
+    var debugReasonDescription: String { get }
 }
 
-/// Error.
+extension GSErrorReason {
+    var reasonDescription: String { return "\(type(of: self))" }
+    var debugReasonDescription: String { return "" }
+}
+
+/// A type that error returned by something. It encompasses a few different types of errors, each with their own associated reasons.
+///
 /// For example:
 ///
 ///     enum APIError: GSError {
@@ -34,4 +43,15 @@ public protocol GSErrorReason {
 ///         case networkWrong(reason: NetworkWrongReason)
 ///         case serverWrong(reason: ServerWrongReason)
 ///     }
-public protocol GSError: Error {}
+public protocol GSError: Error, CustomStringConvertible, CustomDebugStringConvertible {
+    
+    /// See 'GSErrorReason'
+    var reason: GSErrorReason { get }
+}
+
+extension GSError {
+    
+    public var description: String { return reason.reasonDescription }
+    public var debugDescription: String { return reason.debugReasonDescription }
+}
+

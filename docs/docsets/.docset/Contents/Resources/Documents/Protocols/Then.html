@@ -33,9 +33,6 @@
               <li class="nav-group-task">
                 <a href="../Classes/GS.html">GS</a>
               </li>
-              <li class="nav-group-task">
-                <a href="../Classes/Wrapper.html">Wrapper</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -56,7 +53,7 @@
                 <a href="../Protocols/Compatible.html">Compatible</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Protocols.html#/s:11GSStability7GSErrorP">GSError</a>
+                <a href="../Protocols/GSError.html">GSError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/GSErrorReason.html">GSErrorReason</a>
@@ -69,9 +66,6 @@
           <li class="nav-group-name">
             <a href="../Structs.html">Structs</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Structs/Constant.html">Constant</a>
-              </li>
               <li class="nav-group-task">
                 <a href="../Structs/WeakWrapper.html">WeakWrapper</a>
               </li>
@@ -89,7 +83,8 @@
 
                 </div>
               </div>
-            <p>很好用的语法糖</p>
+            <p>A swift syntactic sugar for initialized or others. included &lsquo;then&rsquo;, &lsquo;with&rsquo;, &lsquo;do&rsquo;.
+See <a href="https://github.com/devxoul/Then">https://github.com/devxoul/Then</a></p>
 
           </section>
           <section class="section task-group-section">
@@ -111,13 +106,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Makes it available to set properties with closures just after initializing and copying the value types.</p>
+<pre class="highlight plaintext"><code>let frame = CGRect().with {
+  $0.origin.x = 10
+  $0.size.width = 100
+}
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Then</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:(</span><span class="k">inout</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
 
                         </div>
                       </div>
@@ -140,13 +141,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Makes it available to execute something with closures.</p>
+<pre class="highlight plaintext"><code>UserDefaults.standard.do {
+  $0.set("devxoul", forKey: "username")
+  $0.set("devxoul@gmail.com", forKey: "email")
+  $0.synchronize()
+}
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Then</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="err">`</span><span class="k">do</span><span class="err">`</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:(</span><span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -173,13 +181,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Makes it available to set properties with closures just after initializing.</p>
+<pre class="highlight plaintext"><code>let label = UILabel().then {
+  $0.textAlignment = .Center
+  $0.textColor = UIColor.blackColor()
+  $0.text = "Hello, World!"
+}
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Then</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">then</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:(</span><span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
 
                         </div>
                       </div>
@@ -191,7 +206,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-01-05)</p>
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-02-06)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

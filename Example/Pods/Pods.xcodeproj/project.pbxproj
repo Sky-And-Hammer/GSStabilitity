@@ -17,10 +17,9 @@
 		B1DB33015C091D1622E141480542A6A2 /* Pods-GSStability_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C06415520C4921C480DC237E1471FE /* Pods-GSStability_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA2715570B06CFF215FC4207F698A25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C7F96E529572FAD9435E2A88AA405C0C /* Pods-GSStability_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC524D597A741DA61255072C9463F41 /* Pods-GSStability_Tests-dummy.m */; };
-		CEA1F34EF5E84115D8FED82A00CDF6E3 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6620D1EE6CF7C2D565332A9BE791DB5 /* Wrapper.swift */; };
 		D196D8A09766DA0ABDD4664960D3E383 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4E92A2F877A7E92B959A31CA7B3135 /* Errors.swift */; };
+		EDC0BCD52029BEAC00C01D34 /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC0BCD42029BEAC00C01D34 /* WeakWrapper.swift */; };
 		F2265DDE5238B1EF07BE9717135D0191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F42B72C2CA792461A730087E9607C065 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0F5C1A7E2E21DB3BDD48810AEA86DE /* Constants.swift */; };
 		F97BE64027FBB3692819FC1204BA5FD4 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4A5FDC8388AABCF238B6BADFA3E001 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,31 +43,30 @@
 		20202C36092CEA1CD86C8D6759230F4D /* GSStability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSStability-umbrella.h"; sourceTree = "<group>"; };
 		23C4CF9761588F5BA8B2622FC263FA91 /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Then.swift; path = GSStability/Classes/Then.swift; sourceTree = "<group>"; };
 		2B149F004106591DBA149351217FD2D2 /* Pods-GSStability_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSStability_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		34ACC2FC1D11FB33090CD5C23CFF9B61 /* Pods-GSStability_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GSStability_Example.modulemap"; sourceTree = "<group>"; };
-		382D23A5A2B94F214BBF681070496486 /* Pods_GSStability_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GSStability_Example.framework; path = "Pods-GSStability_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34ACC2FC1D11FB33090CD5C23CFF9B61 /* Pods-GSStability_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GSStability_Example.modulemap"; sourceTree = "<group>"; };
+		382D23A5A2B94F214BBF681070496486 /* Pods_GSStability_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSStability_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4A5FDC8388AABCF238B6BADFA3E001 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = GSStability/Classes/Notifications.swift; sourceTree = "<group>"; };
 		4CA88403EE436FAFB54BB46FFA0C6850 /* Pods-GSStability_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSStability_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FB51DA18D9D2D969C4569C9ADDF6D5B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F0F5C1A7E2E21DB3BDD48810AEA86DE /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = GSStability/Classes/Constants.swift; sourceTree = "<group>"; };
 		5F5F2B8BA6037C61FFCDB0BB72251E0F /* GSStability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSStability.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		69467542CD0560AFE1C146A7D1AE0C13 /* Pods-GSStability_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSStability_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6FA62A805531C76ABFAB02E379B66D00 /* Pods-GSStability_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSStability_Example-dummy.m"; sourceTree = "<group>"; };
-		814E445521D87B68EE4967B97D8EA136 /* GSStability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSStability.modulemap; sourceTree = "<group>"; };
+		814E445521D87B68EE4967B97D8EA136 /* GSStability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GSStability.modulemap; sourceTree = "<group>"; };
 		8A5C819493BF7857F6DB093C61525482 /* Pods-GSStability_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSStability_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8E6D8B3108EA260FE568076D3143EBC9 /* GSStability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSStability-dummy.m"; sourceTree = "<group>"; };
 		92BF8A7A0A798D62DB29E856AF80ED97 /* Pods-GSStability_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSStability_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9511541558832C08BFDE98CAD01A6917 /* GSStability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSStability.framework; path = GSStability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A77530EA1D3D1375D06731BC7C71D710 /* Pods_GSStability_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GSStability_Tests.framework; path = "Pods-GSStability_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9511541558832C08BFDE98CAD01A6917 /* GSStability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSStability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77530EA1D3D1375D06731BC7C71D710 /* Pods_GSStability_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSStability_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2E7B7BE3DE2AFD4A120A821D0C3782 /* Pods-GSStability_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSStability_Example-umbrella.h"; sourceTree = "<group>"; };
 		AE428F37B572F765F88E5EF80BDC7EED /* Pods-GSStability_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSStability_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B1C06415520C4921C480DC237E1471FE /* Pods-GSStability_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSStability_Tests-umbrella.h"; sourceTree = "<group>"; };
-		CEFF4F3C0C125BF4C868D156E31F2AAF /* Pods-GSStability_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GSStability_Tests.modulemap"; sourceTree = "<group>"; };
+		CEFF4F3C0C125BF4C868D156E31F2AAF /* Pods-GSStability_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GSStability_Tests.modulemap"; sourceTree = "<group>"; };
 		DE4E92A2F877A7E92B959A31CA7B3135 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = GSStability/Classes/Errors.swift; sourceTree = "<group>"; };
 		DEDEB3E5ECA03B879282A85BB0139C9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E245EEB625082573EF1944222C7A1CC2 /* Pods-GSStability_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSStability_Example-resources.sh"; sourceTree = "<group>"; };
-		E6620D1EE6CF7C2D565332A9BE791DB5 /* Wrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wrapper.swift; path = GSStability/Classes/Wrapper.swift; sourceTree = "<group>"; };
+		EDC0BCD42029BEAC00C01D34 /* WeakWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeakWrapper.swift; path = GSStability/Classes/WeakWrapper.swift; sourceTree = "<group>"; };
 		F08D56A52D92DB636FE091E04FD9C01D /* Pods-GSStability_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSStability_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FE4239DDC4D4CF058E426E913373E3B8 /* Pods-GSStability_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSStability_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FF266A38AC76A30EB859EE15FEE4888B /* Pods-GSStability_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSStability_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,11 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				116DA955A9AA3F4C01DE36E09E8FB60B /* Compatible.swift */,
-				5F0F5C1A7E2E21DB3BDD48810AEA86DE /* Constants.swift */,
 				DE4E92A2F877A7E92B959A31CA7B3135 /* Errors.swift */,
 				3E4A5FDC8388AABCF238B6BADFA3E001 /* Notifications.swift */,
 				23C4CF9761588F5BA8B2622FC263FA91 /* Then.swift */,
-				E6620D1EE6CF7C2D565332A9BE791DB5 /* Wrapper.swift */,
+				EDC0BCD42029BEAC00C01D34 /* WeakWrapper.swift */,
 				29197C6B15DE591FA60DD242C8CD433E /* Support Files */,
 			);
 			name = GSStability;
@@ -336,13 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC0BCD52029BEAC00C01D34 /* WeakWrapper.swift in Sources */,
 				8B4E04DBF3CC0150900FA10344D7870D /* Compatible.swift in Sources */,
-				F42B72C2CA792461A730087E9607C065 /* Constants.swift in Sources */,
 				D196D8A09766DA0ABDD4664960D3E383 /* Errors.swift in Sources */,
 				78764EFCECD486E419B92E9BE8B74EEF /* GSStability-dummy.m in Sources */,
 				F97BE64027FBB3692819FC1204BA5FD4 /* Notifications.swift in Sources */,
 				9D674A0B778B1181A9D00CF6D6496032 /* Then.swift in Sources */,
-				CEA1F34EF5E84115D8FED82A00CDF6E3 /* Wrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
