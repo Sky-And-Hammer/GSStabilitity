@@ -39,7 +39,7 @@ else
 	echo $(cd ${Module_Path}; git push origin ${Tag_Version})
 
 	# # 4. Thunk to Cocoapods 
-	ehco "\n Cocoapods Push..."
+	echo "\n Cocoapods Push..."
 	echo $(cd ${Module_Path}; pod trunk push --verbose ${Module_File})
 
 	echo "\nSuccess...."
