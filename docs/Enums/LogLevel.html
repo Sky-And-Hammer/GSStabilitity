@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Then Protocol Reference</title>
+    <title>LogLevel Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/Then" class="dashAnchor"></a>
-    <a title="Then Protocol Reference"></a>
+    <a name="//apple_ref/swift/Enum/LogLevel" class="dashAnchor"></a>
+    <a title="LogLevel Enum Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">GSStability Docs</a> (100% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">GSStability Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Then Protocol Reference
+        LogLevel Enum Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -108,15 +108,22 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Then</h1>
+            <h1>LogLevel</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">Then</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                 </div>
               </div>
-            <p>A swift syntactic sugar for initialized or others. included &lsquo;then&rsquo;, &lsquo;with&rsquo;, &lsquo;do&rsquo;.
-See <a href="https://github.com/devxoul/Then">https://github.com/devxoul/Then</a></p>
+            <p>A enum for loger levels</p>
+<li>verbose: verbose level</li>
+<li>info: info level</li>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    warning level
+
+</div>
+<li>error: error level</li>
 
           </section>
           <section class="section task-group-section">
@@ -125,32 +132,23 @@ See <a href="https://github.com/devxoul/Then">https://github.com/devxoul/Then</a
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSStability4ThenPAAE4withxyxzcF"></a>
-                    <a name="//apple_ref/swift/Method/with(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSStability4ThenPAAE4withxyxzcF">with(_:)</a>
+                    <a name="/s:11GSStability8LogLevelO7verboseA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/verbose" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability8LogLevelO7verboseA2CmF">verbose</a>
                     </code>
-                      <span class="declaration-note">
-                        Extension method
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Makes it available to set properties with closures just after initializing and copying the value types.</p>
-<pre class="highlight plaintext"><code>let frame = CGRect().with {
-  $0.origin.x = 10
-  $0.size.width = 100
-}
-</code></pre>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">with</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:(</span><span class="k">inout</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -160,33 +158,75 @@ See <a href="https://github.com/devxoul/Then">https://github.com/devxoul/Then</a
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSStability4ThenPAAE2doyyxcF"></a>
-                    <a name="//apple_ref/swift/Method/do(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSStability4ThenPAAE2doyyxcF">do(_:)</a>
+                    <a name="/s:11GSStability8LogLevelO4infoA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/info" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability8LogLevelO4infoA2CmF">info</a>
                     </code>
-                      <span class="declaration-note">
-                        Extension method
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Makes it available to execute something with closures.</p>
-<pre class="highlight plaintext"><code>UserDefaults.standard.do {
-  $0.set("devxoul", forKey: "username")
-  $0.set("devxoul@gmail.com", forKey: "email")
-  $0.synchronize()
-}
-</code></pre>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="err">`</span><span class="k">do</span><span class="err">`</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:(</span><span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GSStability8LogLevelO7warningA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/warning" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability8LogLevelO7warningA2CmF">warning</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GSStability8LogLevelO5errorA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability8LogLevelO5errorA2CmF">error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -200,33 +240,49 @@ See <a href="https://github.com/devxoul/Then">https://github.com/devxoul/Then</a
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11GSStability4ThenPAARlzCAaBRzlE4thenxyxcF"></a>
-                    <a name="//apple_ref/swift/Method/then(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11GSStability4ThenPAARlzCAaBRzlE4thenxyxcF">then(_:)</a>
+                    <a name="/s:11GSStability8LogLevelO9textColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/textColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability8LogLevelO9textColorSo7UIColorCv">textColor</a>
                     </code>
-                      <span class="declaration-note">
-                        Extension method
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Makes it available to set properties with closures just after initializing.</p>
-<pre class="highlight plaintext"><code>let label = UILabel().then {
-  $0.textAlignment = .Center
-  $0.textColor = UIColor.blackColor()
-  $0.text = "Hello, World!"
-}
-</code></pre>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">then</span><span class="p">(</span><span class="n">_</span> <span class="nv">closure</span><span class="p">:(</span><span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GSStability8LogLevelO10logConsoleSSv"></a>
+                    <a name="//apple_ref/swift/Property/logConsole" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GSStability8LogLevelO10logConsoleSSv">logConsole</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">enum</span> <span class="kt">LogLevel</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
