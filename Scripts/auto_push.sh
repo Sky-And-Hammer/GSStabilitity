@@ -14,7 +14,7 @@ else
 	Module_Code_Path="${Module_Path}/Example"
 	Module_Name="${Module_File##*/}"
 	Module_Name="${Module_Name%.*}"
-	Old_Version="$(grep -r 's.version* ' GSFoundation.podspec |awk -F = '{print $2}')"
+	Old_Version="$(grep -r 's.version* ' ${Module_File} |awk -F = '{print $2}')"
 
 	# 1.更新 jazzy documents
 
