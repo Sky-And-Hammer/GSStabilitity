@@ -73,30 +73,31 @@ public class Logger: LogGenerator {
     var enabel: Bool = true
     
     private let queue = DispatchQueue.init(label: "com.Sky-And-Hammer.ios.GS.log.queue")
+    private let filePath = #file
     
     static let share = Logger.init()
     
     /// Console a verbose level log
-    public static func verbose(_ items: Loggerable..., module: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
-        handlerLog(items, module: module, level: .verbose, file: file, function: function, line: line)
+    public static func verbose(_ items: Loggerable..., file: String = #file, function: String = #function, line: Int = #line) {
+        handlerLog(items, level: .verbose, file: file, function: function, line: line)
     }
     
     /// Console a info level log
-    public static func info(_ items: Loggerable..., module: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
-        handlerLog(items, module: module, level: .info, file: file, function: function, line: line)
+    public static func info(_ items: Loggerable..., file: String = #file, function: String = #function, line: Int = #line) {
+        handlerLog(items, level: .info, file: file, function: function, line: line)
     }
     
     /// Console a warning level log
-    public static func warning(_ items: Loggerable..., module: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
-        handlerLog(items, module: module, level: .warning, file: file, function: function, line: line)
+    public static func warning(_ items: Loggerable..., file: String = #file, function: String = #function, line: Int = #line) {
+        handlerLog(items, level: .warning, file: file, function: function, line: line)
     }
     
     /// Console a error level log
-    public static func error(_ items: Loggerable..., module: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
-        handlerLog(items, module: module, level: .error, file: file, function: function, line: line)
+    public static func error(_ items: Loggerable..., file: String = #file, function: String = #function, line: Int = #line) {
+        handlerLog(items, level: .error, file: file, function: function, line: line)
     }
     
-    fileprivate static func handlerLog(_ items: [Loggerable], module: String? = nil,  level: LogLevel, file: String?, function: String?, line: Int?) {
+    fileprivate static func handlerLog(_ items: [Loggerable], level: LogLevel, file: String?, function: String?, line: Int?) {
         
         func parseFileInfo(file: String?, function: String?, line: Int?) -> String? {
             guard let file = file, let function = function, let line = line else { return nil }
@@ -111,9 +112,20 @@ public class Logger: LogGenerator {
         let stringContent = items.map { $0.logDetail }.joined(separator: "\n")
         
         Logger.share.queue.async {
-            let newLog = LogEntity.init(content: stringContent, module: module, fileInfo: fileInfo, level: level)
+            let newLog = LogEntity.init(content: stringContent, module: moduleName(by: file), fileInfo: fileInfo, level: level)
             Swift.print(newLog.debugDescription)
         }
+    }
+    
+    private static func moduleName(by: String?) -> String? {
+        guard let file = by else { return nil }
+        
+        let words = file.split(separator: "/")
+        for i in 0..<words.count {
+            if !Logger.share.filePath.contains(words[i]) { return String(words[i]) }
+        }
+        
+        return "Unkonw Module"
     }
 }
 
